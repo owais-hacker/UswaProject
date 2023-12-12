@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10th class guess paper</title>
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .class-selection {
+      padding: 20px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+    }
+
+    .comments {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 576px) {
+      .navbar-nav .nav-link {
+        padding: 10px;
+        font-size: 18px;
+      }
+    }
+
+    .header {
+      background-color: rgb(228, 167, 12);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: xx-large;
+      padding-left: 1em;
+    }
+
+    .nav-link {
+      font-weight: 600;
+      font-size: large;
+    }
+
+    body {
+      background-color: rgba(39, 205, 255, 0.185);
+    }
+
+    .custom-list-group .list-group-item {
+      background: none;
+      border: none;
+      width: 70%;
+      /* Adjust the width as needed */
+    }
+
+    .custom-list-group .list-group-item {
+      padding: 0;
+      margin: 0;
+    }
+
+    .phyedu {
+      color: rgb(175, 79, 10);
+    }
+
+    .comments h2 {
+      font-weight: 600;
+      color: rgb(41, 41, 41);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light header">
+    <img src="../../../logo/logo.png" class="col-sm-2 col-md-2 col-lg-1 img-fluid" style="width: 7%;" alt>
+    <a class="navbar-brand text-dark" href="#">
+      USWA TUITION ACADEMY
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link home" href="#home">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chemistry</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Math</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Biology</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Computer</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br> <br>
+
+  <div class="container">
+    <h1 class="mt-4 phyedu text-center">Class 10th Guess Paper</h1>
+
+    <div class="class-selection">
+      <h2 class="font-weight-bold text-dark ml-5">Select Subject:</h2> <br>
+      <div class="btn ml-5" role="group" aria-label="Class Selection">
+        <button type="button" class="physics btn btn-outline-info font-weight-bold pl-4 pr-4">Physics</button><br>
+        <br>
+        <button type="button" class="btn btn-outline-info font-weight-bold ">Chemistry</button> <br> <br>
+        <button type="button" class="btn btn-outline-info font-weight-bold pl-4 pr-4">Biology</button> <br> <br>
+        <button type="button" class="btn btn-outline-info font-weight-bold pl-4 pr-4">Math</button><br> <br>
+        <button type="button" class="btn btn-outline-info font-weight-bold ">Computer</button>
+      </div>
+    </div>
+    <br>
+    <div class="comments">
+      <h2 class="text-secondary">About Subjects</h2> <br>
+      <p>
+        Get Ready to Ace Your Class 10 Exams with Our Guess Papers!
+        Our Class 10 guess papers cover subjects like Physics, Chemistry, Math, Biology,
+        and Computer Science. They are designed to help you prepare for your exams.
+        Full Coverage: Our guess papers give you a good understanding of the subjects,
+        so you'll be ready for your exams.
+      </p>
+    </div>
+  </div> <br> <br>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+    let physics = document.querySelector('.physics');
+    let home = document.querySelector('.home');
+
+    physics.addEventListener('click', () => {
+      window.location = "class9th/physics.html";
+    })
+    home.addEventListener('click', () => {
+      window.location = "../../../../index.html";
+    })
+  </script>
+</body>
+
+</html>

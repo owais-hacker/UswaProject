@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Physics Education Page</title> -->
+    <link rel="stylesheet"
+      href="assets/bootstrap/bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+    .class-selection {
+      padding: 20px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+    }
+
+    .comments {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 576px) {
+      .navbar-nav .nav-link {
+        padding: 10px;
+        font-size: 18px;
+      }
+    }
+
+    .header {
+      background-color: rgb(228, 167, 12);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: xx-large;
+      padding-left: 1em;
+    }
+
+    .nav-link {
+      font-weight: 600;
+      font-size: large;
+    }
+
+    body {
+      background-color: rgb(248, 253, 236);
+    }
+
+    .custom-list-group .list-group-item {
+      background: none;
+      border: none;
+      width: 70%;
+      /* Adjust the width as needed */
+    }
+
+    .custom-list-group .list-group-item {
+      padding: 0;
+      margin: 0;
+    }
+
+    .phyedu {
+      color: rgba(175, 79, 10, 0.795);
+      font-weight: 700;
+    }
+
+    .comments h2 {
+      font-weight: 600;
+      color: rgb(41, 41, 41);
+      text-decoration: underline;
+    }
+  </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light header">
+      <img src="../../logo/logo.png"
+        class="col-sm-2 col-md-2 col-lg-1 img-fluid" style="width: 7%;" alt>
+      <a class="navbar-brand text-dark" href="#">
+        USWA TUITION ACADEMY
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link home" href="#home">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chemistry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Biology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Computer</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br> <br>
+
+    <div class="container">
+      <h1 class="mt-4 phyedu text-center">GUESS PAPER</h1>
+
+      <div class="class-selection rounded">
+        <h2 class="font-weight-bold text-dark ml-5">Select a Class:</h2> <br>
+        <div class="btn ml-5" role="group" aria-label="Class Selection">
+          <button type="button"
+            class="nineguesspaper btn btn-outline-dark font-weight-bold">Class
+            9th Guess Paper</button><br> <br>
+          <button type="button" class="tenguesspaper btn btn-outline-info font-weight-bold">Class
+            10th Guess Paper</button> <br> <br>
+          <button type="button" class="elevenGuesspaper btn btn-outline-success font-weight-bold">Class
+            11th Guess Paper</button> <br> <br>
+          <button type="button" class="twelveGuesspaper btn btn-outline-danger font-weight-bold">Class
+            12th Guess Paper</button>
+
+        </div>
+      </div>
+      <br>
+      <div class="comments">
+        <h4 class="text-center text-secondary">USWA TUITION ACADEMY</h4>
+        <h2 class>About Guess Paper</h2> <br>
+        <p>
+          Guess Papers for the Annual Exams are now available. Study the
+          important questions in our Guess Papers to
+          secure the best possible marks in your exams. These Guess Papers are
+          created by experienced teachers who
+          have carefully reviewed past exam papers and records. Click here to
+          access our Guess Papers.
+        </p>
+      </div>
+    </div> <br> <br>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+    let nineGuesspaper = document.querySelector('.nineguesspaper');
+    let tenGuesspaper = document.querySelector('.tenguesspaper');
+    let elevenGuesspaper = document.querySelector('.elevenGuesspaper');
+    let twelveGuesspaper = document.querySelector('.twelveGuesspaper');
+    let home = document.querySelector('.home');
+
+
+    nineGuesspaper.addEventListener('click', () => {
+      window.location = "selectguesspaper/9seclectsubject.html";
+    })
+
+    tenGuesspaper.addEventListener('click', () => {
+      window.location = "selectguesspaper/10seclectsubject.html";
+    })
+
+    elevenGuesspaper.addEventListener('click', () => {
+      window.location = "selectguesspaper/11seclectsubject.html";
+    })
+
+    twelveGuesspaper.addEventListener('click', () => {
+      window.location = "selectguesspaper/12seclectsubject.html";
+    })
+
+    home.addEventListener('click', () => {
+      window.location = "../../../index.html";
+    })
+  </script>
+  </body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Physics Education Page</title> -->
+    <link rel="stylesheet"
+      href="assets/bootstrap/bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+    .class-selection {
+      padding: 20px;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+    }
+
+    .comments {
+      margin-top: 20px;
+    }
+    @media (max-width: 576px) {
+      .navbar-nav .nav-link {
+        padding: 10px;
+        font-size: 18px;
+      }
+    }
+    .header{
+        background-color: rgb(228, 167, 12);
+    }
+    .navbar-brand{
+        font-weight: 700;
+        font-size: xx-large;
+        padding-left: 1em;
+    }
+    .nav-link{
+        font-weight: 600;
+        font-size: large;
+    }
+    body{
+      background-color: rgba(166, 194, 6, 0.24);
+    }
+    .custom-list-group .list-group-item {
+    background: none;
+    border: none;
+    width: 70%; /* Adjust the width as needed */
+  }
+  .custom-list-group .list-group-item {
+    padding: 0;
+    margin: 0;
+}
+.phyedu{
+  color: rgb(175, 79, 10);
+}
+.comments h2{
+  font-weight: 600;
+  color: rgb(41, 41, 41);
+  text-decoration: underline;
+}
+  </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light header">
+      <img src="../../logo/logo.png"
+        class="col-sm-2 col-md-2 col-lg-1 img-fluid" style="width: 7%;" alt>
+      <a class="navbar-brand text-dark" href="#">
+        USWA TUITION ACADEMY
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link home" href="#home">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chemistry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Biology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Computer</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br> <br>
+
+    <div class="container">
+      <h1 class="mt-4 phyedu text-center">Physics Education</h1>
+
+      <div class="class-selection">
+        <h2 class="font-weight-bold text-dark ml-5">Select a Class:</h2> <br>
+        <div class="btn ml-5" role="group" aria-label="Class Selection">
+          <button type="button"
+            class="physics btn btn-outline-dark font-weight-bold">Class 9th</button><br>
+          <br>
+          <button type="button" class="btn btn-outline-info font-weight-bold">Class
+            10th</button> <br> <br>
+          <button type="button" class="btn btn-outline-success font-weight-bold">Class
+            11th</button> <br> <br>
+          <button type="button" class="btn btn-outline-danger font-weight-bold">Class
+            12th</button>
+
+        </div>
+      </div>
+      <br>
+      <div class="comments">
+        <h2 class>About Physics</h2> <br>
+        <p>
+          Physics is a fascinating subject that explores the fundamental
+          principles governing our universe. In Class 9th and 10th,
+          students are introduced to the basic concepts of physics, including
+          motion, forces, energy, and more.
+        </p>
+        <p>
+          As students progress to Class 11th and 12th, physics becomes more
+          specialized, covering topics such as electromagnetism,
+          thermodynamics, quantum mechanics, and relativity. These classes
+          provide a deeper understanding of the fundamental laws of
+          nature.
+        </p>
+      </div>
+    </div> <br> <br>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+    let physics = document.querySelector('.physics');
+    let home = document.querySelector('.home');
+    physics.addEventListener('click',()=>{
+    window.location = "class9th/physics.html";
+})
+    home.addEventListener('click',()=>{
+    window.location = "../../../index.html";
+})
+  </script>
+  </body>
+
+</html>
